@@ -1,4 +1,4 @@
-Site Paris :
+Site Toulouse :
 - ISP1
 - NETCORE11
 - NETCORE12
@@ -21,7 +21,7 @@ Site Paris :
 - routage -> OSPF chiffré
 - HA -> VRRP, GLBP (NETCORE)
 
-Site Toulouse :
+Site Paris :
 - ISP2
 - NETCORE21
 - NETCORE22
@@ -45,7 +45,40 @@ Site Toulouse :
 - HA -> HSRP, GLBP (NETCORE)
 
 InterSite:
-- vlan100 -> 
-  IPv4 -> 192.168.100.0/30
-  IPv6 -> 2001:db8:acad:100::0/64 GW 2001:db8:acad:100::1
+- ISP1 - ISP2 -> 
+    IPv4 -> 192.168.0.0/30
+    IPv6 ->
+    routage -> BGP
+- IPS1 - NETCORE11 -> 
+    IPv4 -> 192.168.111.0/30
+    IPv6 ->
+    routage -> OSPF
+- ISP1 - NETCORE12 -> 
+    IPv4 -> 192.168.112.0/30
+    IPv6 -> 
+    routage -> OSPF
+- ISP1 - NETCORE21 -> 
+    IPv4 -> 192.168.121.0/30
+    IPv6 -> 
+    routage -> OSPF
+- ISP1 - NETCORE22 -> 
+    IPv4 -> 192.168.122.0/30
+    IPv6 -> 
+    routage -> OSPF
+- ISP2 - NETCORE11 -> 
+    IPv4 -> 192.168.211.0/30
+    IPv6 -> 
+    routage -> EIGRP
+- ISP2 - NETCORE12 -> 
+    IPv4 -> 192.168.212.0/30
+    IPv6 -> 
+    routage -> EIGRP
+- ISP2 - NETCORE21 -> 
+    IPv4 -> 192.168.221.0/30
+    IPv6 -> 
+    routage -> EIGRP
+- ISP2 - NETCORE22 -> 
+    IPv4 -> 192.168.222.0/30
+    IPv6 -> 
+    routage -> EIGRP
 - routage -> BGP
