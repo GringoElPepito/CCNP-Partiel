@@ -72,21 +72,21 @@ InterSite:
 - ISP2 - NETCORE11 -> 
     vlan 211
     IPv4 -> 192.168.211.0/30
-    IPv6 -> 2001:db8:acad:xxx::0/64 
+    IPv6 -> 2001:db8:acad:211::0/64 
     routage -> EIGRP
 - ISP2 - NETCORE12 -> 
     vlan 212
     IPv4 -> 192.168.212.0/30
-    IPv6 -> 2001:db8:acad:xxx::0/64 
+    IPv6 -> 2001:db8:acad:212::0/64 
     routage -> EIGRP
 - ISP2 - NETCORE21 -> 
     vlan 221 
     IPv4 -> 192.168.221.0/30
-    IPv6 -> 2001:db8:acad:xxx::0/64 
+    IPv6 -> 2001:db8:acad:221::0/64 
     routage -> EIGRP
 - ISP2 - NETCORE22 -> 
     vlan 222
     IPv4 -> 192.168.222.0/30
-    IPv6 -> 2001:db8:acad:xxx::0/64 
+    IPv6 -> 2001:db8:acad:222::0/64 
     routage -> EIGRP
 - routage -> BGP
