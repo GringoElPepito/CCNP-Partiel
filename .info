@@ -1,0 +1,51 @@
+Site Paris :
+- ISP1
+- NETCORE11
+- NETCORE12
+- DISTRIB11
+- DISTRIB12
+- ACCESS11
+- ACCESS12
+- vlan11 -> 
+    IPv4 -> 10.11.0.0/24 GW 10.11.0.254 (DISTRIB + ACCESS)
+    IPv6 -> 2001:db8:acad:11::0/64 GW 2001:db8:acad:11::1
+- vlan12 -> 
+    IPv4 -> 10.12.0.0/24 GW 10.12.0.254 (DISTRIB + ACCESS)
+    IPv6 -> 2001:db8:acad:12::0/64 GW 2001:db8:acad:12::1
+- vlan13 -> 
+    IPv4 -> 10.13.0.0/24 GW 10.13.0.254 (DISTRIB + NETCORE)
+    IPv6 -> 2001:db8:acad:13::0/64 GW 2001:db8:acad:13::1
+- vlan14 -> 
+    IPv4 -> 172.16.14.0/24 GW 172.16.14.254 (NETCORE + ISP)
+    IPv6 -> 2001:db8:acad:14::0/64 GW 2001:db8:acad:14::1
+- routage -> OSPF chiffré
+- HA -> VRRP, GLBP (NETCORE)
+
+Site Toulouse :
+- ISP2
+- NETCORE21
+- NETCORE22
+- DISTRIB21
+- DISTRIB22
+- ACCESS21
+- ACCESS22
+- vlan21 -> 
+    IPv4 -> 10.21.0.0/24 GW 10.21.0.254 (DISTRIB + ACCESS)
+    IPv6 -> 2001:db8:acad:21::0/64 GW 2001:db8:acad:21::1
+- vlan22 -> 
+    IPv4 -> 10.22.0.0/24 GW 10.22.0.254 (DISTRIB + ACCESS)
+    IPv6 -> 2001:db8:acad:22::0/64 GW 2001:db8:acad:22::1
+- vlan23 -> 
+    IPv4 -> 10.23.0.0/24 GW 10.23.0.254 (DISTRIB + NETCORE)
+    IPv6 -> 2001:db8:acad:23::0/64 GW 2001:db8:acad:23::1
+- vlan24 -> 
+    IPv4 -> 172.16.24.0/24 GW 172.16.24.254 (NETCORE + ISP)
+    IPv6 -> 2001:db8:acad:24::0/64 GW 2001:db8:acad:24::1
+- routage -> EIGRP
+- HA -> HSRP, GLBP (NETCORE)
+
+InterSite:
+- vlan100 -> 
+  IPv4 -> 192.168.100.0/30
+  IPv6 -> 2001:db8:acad:100::0/64 GW 2001:db8:acad:100::1
+- routage -> BGP
